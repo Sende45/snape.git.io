@@ -1,0 +1,97 @@
+/* Importation de la police Montserrat via Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+/* Style global du body */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #ffffff; /* blanc */
+  color: #004aad; /* bleu */
+  line-height: 1.6;
+}
+
+/* En-tête principal */
+header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 1rem 2rem;
+}
+
+/* Navigation */
+nav button {
+  margin-left: 0.5rem;
+}
+
+/* Pied de page */
+footer {
+  padding: 2rem 1rem;
+  background-color: #f9fafb;
+  color: #6b7280;
+  border-top: 1px solid #e5e7eb;
+}
+
+/* Boutons personnalisés */
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  border-radius: 1rem;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.btn-primary {
+  background-color: #004aad;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #00388c;
+}
+
+.btn-danger {
+  background-color: #ff3131;
+  color: white;
+}
+
+.btn-danger:hover {
+  background-color: #cc1f1f;
+}
+
+.btn-outline {
+  background-color: white;
+  color: #004aad;
+  border: 1px solid #004aad;
+}
+
+.btn-outline:hover {
+  background-color: #004aad;
+  color: white;
+}
+
+/* Cartes (Card) */
+.card {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Titres */
+h1, h2, h3 {
+  font-weight: 700;
+}
+
+/* Responsive utilities */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav button {
+    margin-top: 0.5rem;
+  }
+}
